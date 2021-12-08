@@ -4,7 +4,7 @@ import '../css/about.css';
 import dummyPortrait from '../img/portraitfinal.png';
 import { Spring } from 'react-spring/renderprops';
 
-function About() {
+function Story() {
 
   return (
     <AbsoluteWrapper>
@@ -52,4 +52,4 @@ function About() {
   );
 }
 
-export default About;
+export default Story;

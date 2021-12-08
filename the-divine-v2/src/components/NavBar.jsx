@@ -24,23 +24,23 @@ function NavBar() {
             : { color: "rgba(0, 140, 255, 0.76)" }
         }
       >
-        ANTHONY VIGLIOTTA
+        THE DIVINE
       </h1>
       <div className="links">
         <NavLink className={asp} activeClassName="selected" exact to="/">
           Home
         </NavLink>
-        <NavLink className={asp} activeClassName="selected" to="/about">
-          About
+        <NavLink className={asp} activeClassName="selected" to="/story">
+        Story
         </NavLink>
-        <NavLink className={asp} activeClassName="selected" to="/skills">
-          Skills
+        <NavLink className={asp} activeClassName="selected" to="/tiers">
+        Tiers
         </NavLink>
-        <NavLink className={asp} activeClassName="selected" to="/work">
-          Work
+        <NavLink className={asp} activeClassName="selected" to="/roadmap">
+        Roadmap
         </NavLink>
-        <NavLink className={asp} activeClassName="selected" to="/contact">
-          Contact
+        <NavLink className={asp} activeClassName="selected" to="/team">
+        Team
         </NavLink>
       </div>
     </nav>

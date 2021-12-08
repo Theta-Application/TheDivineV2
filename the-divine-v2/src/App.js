@@ -2,10 +2,10 @@ import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
 import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
+import Story from "./components/Story";
+import Tiers from "./components/Tiers";
+import Roadmap from "./components/Roadmap";
+import Team from "./components/Team";
 import AbsoluteWrapper from "./components/AbsoluteWrapper";
 import NavBar from "./components/NavBar";
 import "./App.css";
@@ -17,10 +17,10 @@ function App() {
   if (location.pathname === "/") {
     document.body.className = "mainbody";
   } else if (
-    location.pathname === "/skills" ||
-    location.pathname === "/work" ||
-    location.pathname === "/resume" ||
-    location.pathname === "/contact"
+    location.pathname === "/story" ||
+    location.pathname === "/tiers" ||
+    location.pathname === "/roadmap" ||
+    location.pathname === "/team"
   ) {
     document.body.className = "skillsbody";
   } else {
@@ -42,10 +42,10 @@ function App() {
             <animated.div key={key} style={props}>
               <Routes location={location}>
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="/about" element={<About />} />
-                <Route exact path="/skills" element={<Skills />} />
-                <Route exact path="/work" element={<Work />} />
-                <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="/story" element={<Story />} />
+                <Route exact path="/tiers" element={<Tiers />} />
+                <Route exact path="/roadmap" element={<Roadmap />} />
+                <Route exact path="/team" element={<Team />} />
               </Routes>
             </animated.div>
           ))}

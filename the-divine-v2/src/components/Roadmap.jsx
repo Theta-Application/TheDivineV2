@@ -4,7 +4,7 @@ import "../css/work.css";
 import { motion } from "framer-motion";
 import WorkPiece from "./WorkPiece";
 
-function Work() {
+function Roadmap() {
   const [modal, showModal] = useState(false);
 
   // variants for parent animation
@@ -147,4 +147,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default Roadmap;

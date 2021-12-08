@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/contact.css';
 
-class Contact extends Component {
+class Team extends Component {
   constructor(props) {
       super();
       this.state = {
@@ -41,4 +41,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default Team;
