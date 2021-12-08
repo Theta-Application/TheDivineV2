@@ -13,10 +13,10 @@ body {
   font-family: 'Spartan', sans-serif;
   background: linear-gradient(
       0deg,
-      rgba(0, 195, 255, 0.63),
-      rgba(1, 105, 165, 0.658)
+      rgba(0, 195, 255, 0.151),
+      rgba(160, 1, 165, 0.281)
     ),
-    url("./img/testbackground5.jpg");
+    url("./img/THEDIVINESITEBACKGROUND.png");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
