@@ -24,7 +24,10 @@ body {
   background-size: cover;
   background-position: center center;
   position: relative;
-  height: 100vh;
+  height: 100%;
+  max-height :100%;
+  max-width :100%;
+  transition: 0.5s;
 }
 
 .altbody {
@@ -48,10 +51,10 @@ body {
   font-family: 'Spartan', sans-serif;
   background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 0),
-      rgba(118, 193, 255, 0)
+      rgba(0, 195, 255, 0.788),
+      rgba(160, 1, 165, 0.555)
     ),
-    url("./img/dott.jpg");
+    url("./img/THEDIVINESITEBACKGROUND.png");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -61,6 +64,8 @@ body {
   position: relative;
   height: 100vh;
   transition: opacity 1s;
+  transition: 0.5s;
+
 }
 
 .layerAlt {
@@ -89,7 +94,7 @@ code {
 }
 
 .navbarAlt {
-  color: rgba(0, 140, 255, 0.76);
+  color: rgba(255, 238, 0, 0.76);
   transition: 1s;
 }
 
@@ -123,14 +128,14 @@ code {
 }
 
 .linksAlt {
-  color: rgba(0, 140, 255, 0.897);
+  color: rgba(255, 238, 0, 0.911);
   text-decoration: none;
   font-size: 1.3vw;
   transition: 1s;
 }
 
 .linksAlt:hover {
-  color: rgba(60, 0, 255, 0.664);
+  color: rgba(212, 150, 16, 0.664);
 }
 
 /* SEMI LARGE PAGE */

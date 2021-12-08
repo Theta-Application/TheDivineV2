@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/slider.css";
 
-export default function SkillSlider(props) {
+export default function TierSlider(props) {
   const skillset = [
     {
       name: "UI/UX Design",

@@ -3,11 +3,14 @@
 .aboutBlock {
   display: flex;
   margin: -20px 70px;
-  color: rgba(0, 140, 255, 0.966);
+  color: rgba(255, 255, 255, 0.966);
   font-family: "Spartan", sans-serif;
-  background-color: white;
+  background-color: none;
   border-radius: 5px;
   padding: 15px;
+  background: rgba(0, 0, 0, 0.089);
+  margin-top: 75px;
+  width: 50%;
 }
 
 .portrait {
@@ -31,7 +34,7 @@
 }
 
 .aboutInfo h1 {
-  margin-bottom: -2px;
+  margin-bottom: 14px;
   font-size: 2.2vw;
   transition: 1s;
   line-height: 40px;
@@ -41,7 +44,7 @@
   letter-spacing: 1.2px;
   line-height: 50px;
   font-size: 1.2vw;
-  color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
   transition: 1s;
 }
 

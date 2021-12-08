@@ -22,7 +22,7 @@ function NavBar() {
         style={
           location.pathname === "/"
             ? { color: "white" }
-            : { color: "rgba(0, 140, 255, 0.76)" }
+            : { color: "rgba(255, 238, 0, 0.76)" }
         }
       >
         THE DIVINE

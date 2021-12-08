@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import os from "../img/os.png";
+import divine from '../img/THEDIVINESITEBACKGROUND.png'
 import {
   connectWallet,
   getCurrentWalletConnected,
@@ -92,7 +93,7 @@ function Home() {
   };
 
   return (
-    <AbsoluteWrapper>
+    <AbsoluteWrapper id="home">
       <div className="homeBlock">
         <a
           href="https://opensea.io/collection/the-divine-nft"
@@ -128,7 +129,7 @@ function Home() {
             ready.
           </h2>
         </div>
-      </div>
+        </div>
     </AbsoluteWrapper>
   );
 }

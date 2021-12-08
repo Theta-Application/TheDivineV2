@@ -5,7 +5,7 @@ import adobeLogo from "../img/136-adobe-512.png";
 import "../css/skills.css";
 import { Spring } from "react-spring/renderprops";
 import { motion, AnimatePresence } from "framer-motion";
-import SkillSlider from "./SkillSlider";
+import TierSlider from "./TierSlider";
 import useWindowDimensions from "./WindowSize";
 
 function Skills() {
@@ -290,7 +290,7 @@ function Skills() {
             className="managerialBlocks"
             onMouseEnter={() => setSkill("  ")}
           >
-            <SkillSlider x={x} />
+            <TierSlider x={x} />
             {width < 955 ? (
               <>
                 <button className="goLeft" onClick={goLeft}>

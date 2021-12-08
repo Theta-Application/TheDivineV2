@@ -1,8 +1,9 @@
 import React from 'react';
 
-const AbsoluteWrapper = ({ children }) => {
+const AbsoluteWrapper = ({ children, id }) => {
+    console.log('id', id)
     return(
-    <div className="position-absolute">
+    <div id={id === "home" ? "home" : "null"} className="position-absolute">
         {children}
     </div>
     )
