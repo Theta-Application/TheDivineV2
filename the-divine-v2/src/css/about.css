@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+.aboutBlock {
+    display: flex;
+    margin: -20px 70px;
+    color: rgba(0, 140, 255, 0.966);
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.portrait {
+    width: 600px;
+    transition: 1s;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+}
+
+.aboutInfo h2 {
+    margin-bottom: -5px;
+    font-size: 1.7vw;
+    color: black;
+    letter-spacing: 1.5px;
+    transition: 1s;
+    
+}
+
+.aboutInfo h1 {
+    margin-bottom: -2px;
+    font-size: 2.2vw;
+    transition: 1s;
+    line-height: 40px;
+}
+
+.aboutInfo p {
+    letter-spacing: 1.2px;
+    line-height: 50px;
+    font-size: 1.2vw;
+    color: rgb(37, 37, 37);
+    transition: 1s;
+}
+
+.bottomBorder {
+    margin-top: -29px;
+    width: 100%;
+    background-color: rgba(51, 139, 255, 0);
+    height: 100vh;
+    transition: 1s;
+}
+
+/* SEMI LARGE PAGE */
+
+@media (max-width: 1500px) {
+    .aboutInfo p {
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .aboutInfo p {
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .bottomBorder {
+        display: none;
+    }
+    .aboutInfo h2 {
+        font-size: 1.3em;
+        letter-spacing: 1.5px;
+    }
+    
+    .aboutInfo h1 {
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+    
+    .aboutInfo p {
+        line-height: 40px;
+        font-size: 0.9em;
+    }
+    .portrait {
+        width: 500px;
+    }
+    .altbody {
+        overflow-y: visible;
+    }
+}
+
+/* TABLET PAGE */
+
+@media (max-width: 949px) {
+    .aboutInfo h2 {
+        font-size: 1.1em;
+        letter-spacing: 1.5px;
+    }
+    
+    .aboutInfo h1 {
+        font-size: 1.3em;
+        line-height: 30px;
+    }
+    
+    .aboutInfo p {
+        line-height: 25px;
+        font-size: 0.7em;
+    }
+
+    .portrait {
+        width: 300px;
+    }
+    .bottomBorder {
+        display: none;
+    }
+    .altbody {
+        overflow-y: visible;
+    }
+}
+
+/* SEMI TABLET */
+
+@media (max-width: 840px) {
+    .aboutBlock {
+        flex-direction: column;
+    }
+    .altbody {
+        overflow-y: visible;
+    }
+    .bottomBorder {
+        display: none;
+    }
+    .aboutInfo {
+        text-align: center;
+    }
+
+}
+
+/* MOBILE PAGE */
+
+@media (max-width: 575px) {
+    .aboutBlock {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

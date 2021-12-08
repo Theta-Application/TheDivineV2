@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+h6 {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 140, 255, 0.76);
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.contactForm {
+    background-color: rgba(0, 140, 255, 0.329);
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.contactForm input {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: transparent;
+    color: rgba(0, 140, 255, 0.76);;
+    border: none;
+    border-bottom: solid rgba(0, 140, 255, 0.76) 1px;
+    opacity: 0.9;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactForm input::placeholder {
+    color: rgba(0, 140, 255, 0.76);
+    font-family: 'Poppins', sans-serif;
+    transition: 0.8s;
+}
+
+.contactForm input:hover::-webkit-input-placeholder {
+    color: rgba(146, 146, 146, 0.322);
+    font-size: 0.5em;
+    transition: 0.8s;
+}
+
+.contactForm textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: transparent;
+    color: rgba(0, 81, 255, 0.822);
+    border: none;
+    border-bottom: solid rgba(0, 140, 255, 0.76) 1px;
+    opacity: 0.9;
+    outline: none;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+}
+
+.contactForm button {
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2em;
+    border: white 1px solid;
+    border-radius: 5px;
+    background: rgba(0, 140, 255, 0.562);
+    transition: 1s;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.contactForm button:hover {
+    background: rgba(0, 140, 255, 0.842);
+}
+
+#popUp {
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgba(19, 224, 19, 0.774);
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    transition: 1s;
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+    .contactForm {
+        margin-bottom: 20px;
+        width: 80%;
+        transition: 1s;
+    }
+
+    .contactForm textarea {
+        width: 80%;
+    }
+   
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+
+.downloadResume {
+    margin: 100px auto;
+    width: 400px;
+    font-size: 3em;
+    background-color: rgba(0, 80, 184, 0.651);
+    color: white;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    transition: 1.5s;
+    height: 200px;
+}
+
+
+.downloadResume:hover {
+    width: 375px;
+    font-size: 3em;
+    background-color: rgba(0, 117, 184, 0.404);
+
+}
+
+@media (max-width: 575px) {
+    .downloadResume {
+        width: 200px;
+        font-size: 1.8em;
+    }
+}

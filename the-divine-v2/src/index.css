@@ -1,0 +1,213 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.mainbody {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 195, 255, 0.63),
+      rgba(1, 105, 165, 0.658)
+    ),
+    url("./img/testbackground5.jpg");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+}
+
+.altbody {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  transition: opacity 1s;
+  overflow-y: scroll;
+}
+
+.skillsbody {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0),
+      rgba(118, 193, 255, 0)
+    ),
+    url("./img/dott.jpg");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  transition: opacity 1s;
+}
+
+.layerAlt {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  transition: 1s;
+}
+
+.navbarAlt {
+  color: rgba(0, 140, 255, 0.76);
+  transition: 1s;
+}
+
+.navbar h1 {
+  letter-spacing: 3px;
+  font-size: 2vw;
+  transition: 1s;
+}
+
+.links {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  transition: 1s;
+}
+
+.links .selected {
+  color: rgba(142, 223, 255, 0.849);
+  transition: 0.5s;
+}
+
+.as {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3vw;
+  transition: 0.5s;
+}
+
+.as:hover {
+  color: rgba(85, 228, 253, 0.774);
+}
+
+.linksAlt {
+  color: rgba(0, 140, 255, 0.897);
+  text-decoration: none;
+  font-size: 1.3vw;
+  transition: 1s;
+}
+
+.linksAlt:hover {
+  color: rgba(60, 0, 255, 0.664);
+}
+
+/* SEMI LARGE PAGE */
+
+@media (max-width: 1200px) {
+  .as {
+    font-size: 1.1em;
+  }
+
+  .linksAlt {
+    font-size: 1em;
+  }
+
+  .navbar h1 {
+    font-size: 1.6em;
+  }
+}
+
+/* TABLET PAGE */
+
+@media (max-width: 949px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .links {
+    width: 90%;
+  }
+}
+
+/* MOBILE PAGE */
+
+@media (max-width: 575px) {
+  .links {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+    align-items: space-evenly;
+    margin-bottom: -40px;
+  }
+
+  .as {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+
+  .linksAlt {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+
+  .navbar h1 {
+    font-size: 1.9em;
+  }
+
+  .mainbody {
+    background: none;
+    background-color: rgba(0, 140, 255, 0.651);
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    transition: 1s;
+  }
+
+  .navbar h1 {
+    display: none;
+  }
+}
