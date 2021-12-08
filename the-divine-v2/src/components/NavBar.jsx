@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import logo from '../img/LOGO.png';
 
 function NavBar() {
   let location = useLocation();
@@ -26,6 +27,7 @@ function NavBar() {
       >
         THE DIVINE
       </h1>
+      {/* <img className="logoHeader" width="55px" src={logo} alt="logo"/> */}
       <div className="links">
         <NavLink className={asp} activeClassName="selected" exact to="/">
           Home
