@@ -172,11 +172,11 @@
   font-size: 1.5em;
   font-family: 'Spartan', sans-serif;
   font-weight: bold;
-  padding-top: 3px;
-  background-color: rgb(252, 241, 86);
-  color: rgb(100, 46, 185);
+  padding-top: 1px;
+  background-color: rgba(100, 33, 155, 0.849);
+  color: rgb(228, 213, 163);
   cursor: pointer;
-  border: solid rgba(255, 255, 255, 0.363) 3px;
+  border: solid rgba(156, 102, 228, 0.473) 3px;
   transition: 0.5s;
 }
 
@@ -188,7 +188,7 @@
 }
 
 .videos-box:hover {
-  background-color: rgb(255, 208, 0);
+  background-color: rgb(159, 76, 238);
   transition: 0.5s;
 }
 

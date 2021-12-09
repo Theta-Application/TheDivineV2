@@ -11,7 +11,7 @@ function Story() {
           <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="500">
             {(props) => (
               <div style={props}>
-                <h1>Do not falter, the Eradication cometh.</h1>
+                <h1>Do not falter, the <span style={{ fontWeight: "bold", color: "gold" }}>Eradication</span> cometh.</h1>
               </div>
             )}
           </Spring>
