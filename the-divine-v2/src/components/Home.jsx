@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import os from "../img/os.png";
-import divine from '../img/THEDIVINESITEBACKGROUND.png'
 import {
   connectWallet,
   getCurrentWalletConnected,

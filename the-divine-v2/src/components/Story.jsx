@@ -11,9 +11,7 @@ function Story() {
           <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="500">
             {(props) => (
               <div style={props}>
-                <h1>
-                  Do not falter, the Eradication cometh.
-                </h1>
+                <h1>Do not falter, the Eradication cometh.</h1>
               </div>
             )}
           </Spring>
@@ -21,8 +19,8 @@ function Story() {
             {(props) => (
               <div style={props}>
                 <p>
-                  The Divine are guided and created by the omniavelent Arc and reside
-                  in The Heavens. From The Fire, the dark world below The
+                  The Divine are guided and created by the omniavelent Arc and
+                  reside in The Heavens. From The Fire, the dark world below The
                   Heavens, demonic spawns arose to fight and overtake The Arc,
                   this was the first Eradication. Ultimately, The Fire failed,
                   but this left a tainted mark on The Arc and The Heavens; the
@@ -34,6 +32,25 @@ function Story() {
           </Spring>
         </div>
       </div>
+      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="1100">
+        {(props) => (
+          <div style={props}>
+            <div className="videosBox">
+              <a
+                href="https://vimeo.com/user153609926"
+                target="_blank"
+                rel="noreferrer"
+                className="videos"
+                id="videosLink"
+              >
+                <button className="videos-box">
+                  VIDEOS <i className="fas fa-video"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        )}
+      </Spring>
     </AbsoluteWrapper>
   );
 }
