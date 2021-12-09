@@ -5,6 +5,7 @@ import { Transition } from "react-transition-group";
 
 function Tiers() {
   const [switcher, setSwitch] = useState(false);
+  const [currentTier, setTier] = useState("vindicator")
 
   const duration = 500;
 
@@ -23,19 +24,7 @@ function Tiers() {
   return (
     <AbsoluteWrapper>
       <div className="tiersPage">
-        <Transition in={switcher} timeout={duration}>
-          {(state) => (
-            <div
-              style={{
-                ...defaultStyle,
-                ...transitionStyles[state],
-              }}
-            >
-              Hello
-            </div>
-          )}
-        </Transition>
-
+        <Tier />
         <button onClick={() => setSwitch(!switcher)}>here</button>
       </div>
     </AbsoluteWrapper>
@@ -43,3 +32,20 @@ function Tiers() {
 }
 
 export default Tiers;
+
+function Tier(props) {
+  return (
+    <Transition in={switcher} timeout={duration}>
+      {(state) => (
+        <div
+          style={{
+            ...defaultStyle,
+            ...transitionStyles[state],
+          }}
+        >
+          <h1></h1>
+        </div>
+      )}
+    </Transition>
+  );
+}
