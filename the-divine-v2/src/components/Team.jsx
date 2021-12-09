@@ -11,7 +11,7 @@ import useWindowDimensions from "./WindowSize";
 function Team() {
   const { width, height } = useWindowDimensions();
 
-  if (width > 1141 && height > 841) {
+  if (width > 1000 && height > 741) {
     return (
       <AbsoluteWrapper>
         <div className="teamCards">

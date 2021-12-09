@@ -154,7 +154,7 @@ function Tier(props) {
               {number === 6 && <div style={{ width: "50%", height: "50px" }} />}
             </div>
 
-            <p className="pDivine">{((width > 1024 && height > 752) || (number === 6)) ?  text : ""}</p>
+            <p className="pDivine">{((width > 640 && height > 628) || (number === 6)) ?  text : ""}</p>
           </div>
         </div>
       )}
