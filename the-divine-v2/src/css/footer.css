@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    margin-left: 15px;
+}
+
+h2 {
+    margin: 25px;
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 0.7em;
+}

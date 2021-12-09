@@ -8,6 +8,7 @@ import Roadmap from "./components/Roadmap";
 import Team from "./components/Team";
 import AbsoluteWrapper from "./components/AbsoluteWrapper";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import "./App.css";
 import "./css/landingpage.css";
 
@@ -48,6 +49,7 @@ function App() {
           ))}
         </div>
       </div>
+      <Footer />
     </AbsoluteWrapper>
   );
 }

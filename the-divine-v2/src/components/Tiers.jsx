@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import "../css/tiers.css";
 import { Transition } from "react-transition-group";
-import divine from "../img/BACKGROUNDDIVINE.png";
 import vindicator from "../img/Vindicator.png";
 import apostle from "../img/Apostle.png";
 import royalty from "../img/Royalty.png";
@@ -10,7 +9,6 @@ import valkyrie from "../img/Valkyrie.png";
 import trinity from "../img/Trinity.png";
 
 function Tiers() {
-  const [switcher, setSwitch] = useState(false);
 
   const types = [
     {
@@ -41,13 +39,13 @@ function Tiers() {
       tierName: "THE TRINITY",
       img: trinity,
       number: 5,
-      text: "Okay",
+      text: "The Arc's thoughts come to life... created to manage the flow of time, manifest souls across the realms, and bring balance to the universes in which they reside.",
     },
     {
       tierName: "THE ARC",
       img: "",
       number: 6,
-      text: "Okay",
+      text: "The timeless. The lifeless. The all-knowing. The consciousness conjuror. The everything.",
     },
   ];
 
@@ -146,6 +144,8 @@ function Tier(props) {
             <h2 className="tierType">{tierName}</h2>
             <div className="imageAndBorder">
               {!(number === 6) && <img src={img} alt="divine" />}
+              {(number === 6) && 
+              <div style={{ width: "50%", height: "50px" }} />}
             </div>
 
             <p className="pDivine">{text}</p>
