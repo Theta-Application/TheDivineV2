@@ -1,0 +1,76 @@
+.tiersPage {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tier {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.tierNumber {
+margin: 0;
+font-size: 1em;
+color: rgba(255, 255, 255, 0.808);
+}
+
+.nextTier {
+    width: 20%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nextTier i {
+    font-size: 8em;
+    color: rgba(235, 211, 2, 0.452);
+    transition: 0.5s;
+}
+
+.nextTier:hover i {
+    color: rgba(235, 212, 2, 0.788);
+    transition: 0.5s;
+}
+
+.tierType {
+margin: 0;
+margin-top: 10px;
+font-size: 3em;
+color: rgba(255, 217, 0, 0.719);
+}
+
+
+.imageAndBorder {
+    opacity: 0.8;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.imageAndBorder img {
+    width: 80%;
+
+}
+
+.pDivine {
+    background: rgba(14, 50, 255, 0.123);
+    color: white;
+    margin-top: 0;
+    font-size: 0.8em;
+    padding: 15px;
+    width: 90%;
+    line-height: 30px;
+    border-radius: 5px;
+    letter-spacing: 1.52px;
+
+}
+
+#tiers {
+    height: 80vh;
+}
