@@ -17,10 +17,7 @@ function App() {
   if (location.pathname === "/") {
     document.body.className = "mainbody";
   } else if (
-    location.pathname === "/story" ||
-    location.pathname === "/tiers" ||
-    location.pathname === "/roadmap" ||
-    location.pathname === "/team"
+    location.pathname === "/story"
   ) {
     document.body.className = "skillsbody";
   } else {

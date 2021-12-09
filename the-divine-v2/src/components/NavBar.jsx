@@ -27,7 +27,6 @@ function NavBar() {
       >
         THE DIVINE
       </h1>
-      {/* <img className="logoHeader" width="55px" src={logo} alt="logo"/> */}
       <div className="links">
         <NavLink className={asp} activeClassName="selected" exact to="/">
           Home
