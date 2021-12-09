@@ -38,7 +38,6 @@ export const connectWallet = async () => {
             <a
               target="_blank"
               href={`https://metamask.io/download.html`}
-              rel="noreferrer"
               rel="noopener noreferrer"
             >
               You must install Metamask, a virtual Ethereum wallet, in your
@@ -85,7 +84,6 @@ export const getCurrentWalletConnected = async () => {
             <a
               target="_blank"
               href={`https://metamask.io/download.html`}
-              rel="noreferrer"
               rel="noopener noreferrer"
             >
               You must install Metamask, a virtual Ethereum wallet, in your
