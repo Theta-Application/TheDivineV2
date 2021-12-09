@@ -212,3 +212,22 @@
 /* .videos-box:hover:before {
   left: 655px;
 } */
+
+.iconLinks {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.iconLinks i {
+  color: rgba(255, 255, 255, 0.651);
+  font-size: 1.7em;
+  margin: 0 20px;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+.iconLinks i:hover {
+  color: white;
+  transition: 0.5s;
+}

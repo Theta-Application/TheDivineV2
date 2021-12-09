@@ -94,6 +94,7 @@ function Home() {
   return (
     <AbsoluteWrapper id="home">
       <div className="homeBlock">
+        <div className="iconLinks">
         <a
           href="https://opensea.io/collection/the-divine-nft"
           target="_blank"
@@ -106,6 +107,9 @@ function Home() {
             </span>
           </div>
         </a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/thedivinenft"><i className="fab fa-twitter"></i></a>
+          <a  target="_blank" rel="noreferrer" href="https://discord.gg/the-divine"><i className="fab fa-discord"></i></a>
+        </div>
         <h2>Fight for the Heavens.</h2>
         <p>
           4,444 hand-drawn, cosmic, angelic warriors that protect and nurture
