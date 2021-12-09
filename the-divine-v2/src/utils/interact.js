@@ -117,11 +117,7 @@ export const presaleMints = async (wallet) => {
 
   window.contract = await new web3.eth.Contract(contractABI, updatedAddress);
 
-  console.log("WALLET", wallet)
-
   const whitelistedTotal = await window.contract.methods.Whitelist(wallet).call();
-
-  console.log("whitelistedTotal", whitelistedTotal)
 
   return whitelistedTotal;
 };
@@ -131,8 +127,6 @@ export const mintNFT = async (mintAmount, address) => {
   if (!address) {
     return;
   }
-
-  console.log("CONTRACT ABI", contractABI);
 
   const updatedAddress = web3.utils.toChecksumAddress(
     contractAddress

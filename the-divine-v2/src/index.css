@@ -38,10 +38,16 @@ body {
 .phonebody {
   margin: 0;
   font-family: 'Spartan', sans-serif;
-  background: rgb(44, 169, 211);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 140, 255, 0.788),
+    rgba(160, 1, 165, 0.281)
+  );
   background-size: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow-x: hidden;
   text-align: center;;
   position: relative;
@@ -185,7 +191,7 @@ code {
 }
 
 .linksAlt:hover {
-  color: rgba(212, 150, 16, 0.664);
+  color: rgb(255, 255, 255);
 }
 
 /* SEMI LARGE PAGE */

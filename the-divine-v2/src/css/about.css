@@ -105,6 +105,10 @@
   }
 }
 
+.emptySpace {
+  height: 200px;
+}
+
 /* TABLET PAGE */
 
 @media (max-width: 949px) {

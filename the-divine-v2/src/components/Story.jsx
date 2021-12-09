@@ -2,8 +2,11 @@ import React from "react";
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import "../css/about.css";
 import { Spring } from "react-spring/renderprops";
+import useWindowDimensions from "./WindowSize";
 
 function Story() {
+  const { width } = useWindowDimensions();
+
   return (
     <AbsoluteWrapper>
       <div className="aboutBlock">
@@ -51,6 +54,7 @@ function Story() {
           </div>
         )}
       </Spring>
+      {width < 575 && <div className="emptySpace"></div>}
     </AbsoluteWrapper>
   );
 }
