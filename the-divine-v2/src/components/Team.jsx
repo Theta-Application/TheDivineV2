@@ -19,7 +19,7 @@ function Team() {
             <h1>FINTIST</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/fintist"
             >
               <div class="container">
@@ -45,7 +45,7 @@ function Team() {
             <h1>Vigz</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/anthonyvigz"
             >
               <div class="container">
@@ -70,7 +70,7 @@ function Team() {
             <h1>ChemicalMessiah</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/thedirtgod"
             >
               <div class="container">
@@ -95,7 +95,7 @@ function Team() {
             <h1>AlienQueen</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/alienqueennft"
             >
               <div class="container">
@@ -121,7 +121,7 @@ function Team() {
             <h1>Luxio</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/luxionft"
             >
               <div class="container">
@@ -153,7 +153,7 @@ function Team() {
             <h1>FINTIST</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/fintist"
             >
               <div class="container">
@@ -168,7 +168,7 @@ function Team() {
             <h1>Vigz</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/anthonyvigz"
             >
               <div class="container">
@@ -183,7 +183,7 @@ function Team() {
             <h1>ChemicalMessiah</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/thedirtgod"
             >
               <div class="container">
@@ -198,7 +198,7 @@ function Team() {
             <h1>AlienQueen</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/alienqueennft"
             >
               <div class="container">
@@ -213,7 +213,7 @@ function Team() {
             <h1>Luxio</h1>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://twitter.com/luxionft"
             >
               <div class="container">

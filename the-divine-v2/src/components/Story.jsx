@@ -39,7 +39,7 @@ function Story() {
               <a
                 href="https://vimeo.com/user153609926"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="videos"
                 id="videosLink"
               >

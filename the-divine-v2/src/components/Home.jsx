@@ -12,7 +12,7 @@ import {
 function Home() {
   // Minter information
   const [walletAddress, setWallet] = useState("");
-  const [status, setStatus] = useState("");
+  const [, setStatus] = useState("");
 
   const [supply, setSupply] = useState(0);
 
@@ -41,7 +41,7 @@ function Home() {
           <a
             target="_blank"
             href={`https://metamask.io/download.html`}
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             You must install Metamask, a virtual Ethereum wallet, in your
             browser.
@@ -98,7 +98,7 @@ function Home() {
         <a
           href="https://opensea.io/collection/the-divine-nft"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <div className="osButton">
             <img src={os} alt="opensea" id="os" />
@@ -107,8 +107,8 @@ function Home() {
             </span>
           </div>
         </a>
-        <a target="_blank" rel="noreferrer" href="https://twitter.com/thedivinenft"><i className="fab fa-twitter"></i></a>
-          <a  target="_blank" rel="noreferrer" href="https://discord.gg/the-divine"><i className="fab fa-discord"></i></a>
+        <a target="_blank"rel="noopener noreferrer" href="https://twitter.com/thedivinenft"><i className="fab fa-twitter"></i></a>
+          <a  target="_blank" rel="noopener noreferrer" href="https://discord.gg/the-divine"><i className="fab fa-discord"></i></a>
         </div>
         <h2>Fight for the Heavens.</h2>
         <p>
