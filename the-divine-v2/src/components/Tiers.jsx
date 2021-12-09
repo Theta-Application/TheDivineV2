@@ -7,9 +7,9 @@ import apostle from "../img/Apostle.png";
 import royalty from "../img/Royalty.png";
 import valkyrie from "../img/Valkyrie.png";
 import trinity from "../img/Trinity.png";
+import { Spring } from "react-spring/renderprops";
 
 function Tiers() {
-
   const types = [
     {
       tierName: "THE VINDICATORS",
@@ -67,36 +67,40 @@ function Tiers() {
 
   return (
     <AbsoluteWrapper id="tiers">
-      <div className="tiersPage">
-        <button
-          style={{
-            opacity: currentTierIndex === 0 ? 0 : 1,
-            transition: "0.5s",
-          }}
-          disabled={currentTierIndex === 0}
-          onClick={() => goLeft()}
-          className="nextTier"
-        >
-          <i className="fas fa-chevron-left"></i>
-        </button>
-        <Tier switcher={currentTierIndex === 0} divine={types[0]} />
-        <Tier switcher={currentTierIndex === 1} divine={types[1]} />
-        <Tier switcher={currentTierIndex === 2} divine={types[2]} />
-        <Tier switcher={currentTierIndex === 3} divine={types[3]} />
-        <Tier switcher={currentTierIndex === 4} divine={types[4]} />
-        <Tier switcher={currentTierIndex === 5} divine={types[5]} />
-        <button
-          onClick={() => goRight()}
-          style={{
-            opacity: currentTierIndex === 5 ? 0 : 1,
-            transition: "0.5s",
-          }}
-          disabled={currentTierIndex === 5}
-          className="nextTier"
-        >
-          <i className="fas fa-chevron-right"></i>
-        </button>
-      </div>
+      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="500">
+        {(props) => (
+          <div style={props} className="tiersPage">
+            <button
+              style={{
+                opacity: currentTierIndex === 0 ? 0 : 1,
+                transition: "0.5s",
+              }}
+              disabled={currentTierIndex === 0}
+              onClick={() => goLeft()}
+              className="nextTier"
+            >
+              <i className="fas fa-chevron-left"></i>
+            </button>
+            <Tier switcher={currentTierIndex === 0} divine={types[0]} />
+            <Tier switcher={currentTierIndex === 1} divine={types[1]} />
+            <Tier switcher={currentTierIndex === 2} divine={types[2]} />
+            <Tier switcher={currentTierIndex === 3} divine={types[3]} />
+            <Tier switcher={currentTierIndex === 4} divine={types[4]} />
+            <Tier switcher={currentTierIndex === 5} divine={types[5]} />
+            <button
+              onClick={() => goRight()}
+              style={{
+                opacity: currentTierIndex === 5 ? 0 : 1,
+                transition: "0.5s",
+              }}
+              disabled={currentTierIndex === 5}
+              className="nextTier"
+            >
+              <i className="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        )}
+      </Spring>
     </AbsoluteWrapper>
   );
 }
@@ -144,8 +148,7 @@ function Tier(props) {
             <h2 className="tierType">{tierName}</h2>
             <div className="imageAndBorder">
               {!(number === 6) && <img src={img} alt="divine" />}
-              {(number === 6) && 
-              <div style={{ width: "50%", height: "50px" }} />}
+              {number === 6 && <div style={{ width: "50%", height: "50px" }} />}
             </div>
 
             <p className="pDivine">{text}</p>

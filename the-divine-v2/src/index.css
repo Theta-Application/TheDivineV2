@@ -30,7 +30,6 @@ body {
   max-height :100%;
   max-width :100%;
   transition: 0.5s;
-  overflow: hidden; /* Hide scrollbars */
 
 }
 
@@ -52,7 +51,27 @@ body {
   position: relative;
   height: 100vh;
   transition: 0.5s;
-  overflow: hidden; /* Hide scrollbars */
+
+}
+
+.roadmapbody {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  background: linear-gradient(
+      0deg,
+      rgba(10, 166, 187, 0.726),
+      rgba(1, 39, 165, 0.644)
+    ),
+    url("./img/NODIVINEBG.png");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  transition: 0.5s;
 
 }
 
@@ -75,7 +94,6 @@ body {
   height: 100vh;
   transition: opacity 1s;
   transition: 0.5s;
-  overflow: hidden; /* Hide scrollbars */
 
 
 }

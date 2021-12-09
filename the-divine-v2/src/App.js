@@ -21,8 +21,12 @@ function App() {
     location.pathname === "/story"
   ) {
     document.body.className = "skillsbody";
-  } else {
+  } else if (
+    location.pathname === "/tiers"
+  ) {
     document.body.className = "altbody";
+  } else {
+    document.body.className = "roadmapbody";
   }
 
   let transitions = useTransition(location, (location) => location.pathname, {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import "../css/about.css";
 import { Spring } from "react-spring/renderprops";
