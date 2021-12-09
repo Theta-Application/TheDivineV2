@@ -156,7 +156,7 @@
 @media (max-width: 575px) {
   .aboutBlock {
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 }
 

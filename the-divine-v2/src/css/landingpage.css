@@ -22,7 +22,6 @@
     opacity: 0.6;
     transition: 0.5s;
     padding: 0;
-    margin: 0;
 }
 
 .osButton:hover {
@@ -235,6 +234,10 @@
 /* MOBILE PAGE */
 
 @media (max-width: 575px) {
+
+  .allMintingInfo {
+    width: 100%;
+  }
 
     .homeBlock {
         align-items: center;

@@ -1,10 +1,12 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import logo from '../img/LOGO.png';
+import useWindowDimensions from "./WindowSize";
 
 function NavBar() {
   let location = useLocation();
+
+  const { width } = useWindowDimensions();
 
   let navbar = "navbar";
   let asp = "as";
@@ -34,9 +36,9 @@ function NavBar() {
         <NavLink className={asp} activeClassName="selected" to="/story">
         Story
         </NavLink>
-        <NavLink className={asp} activeClassName="selected" to="/tiers">
+        {width > 575 && <NavLink className={asp} activeClassName="selected" to="/tiers">
         Tiers
-        </NavLink>
+        </NavLink>}
         <NavLink className={asp} activeClassName="selected" to="/roadmap">
         Roadmap
         </NavLink>

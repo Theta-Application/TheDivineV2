@@ -8,6 +8,7 @@ import royalty from "../img/Royalty.png";
 import valkyrie from "../img/Valkyrie.png";
 import trinity from "../img/Trinity.png";
 import { Spring } from "react-spring/renderprops";
+import useWindowDimensions from "./WindowSize";
 
 function Tiers() {
   const types = [
@@ -108,6 +109,8 @@ function Tiers() {
 export default Tiers;
 
 function Tier(props) {
+  const { width, height } = useWindowDimensions();
+
   const transitionStyles = {
     entering: { opacity: 0 },
     entered: { opacity: 1 },
@@ -145,13 +148,13 @@ function Tier(props) {
         >
           <div className="tier">
             <h1 className="tierNumber">Tier {number}</h1>
-            <h2 className="tierType">{tierName}</h2>
+            <h2 style={{ fontSize: (width < 440) ? "1em" : "2.4em" }} className="tierType">{tierName}</h2>
             <div className="imageAndBorder">
               {!(number === 6) && <img src={img} alt="divine" />}
               {number === 6 && <div style={{ width: "50%", height: "50px" }} />}
             </div>
 
-            <p className="pDivine">{text}</p>
+            <p className="pDivine">{((width > 1024 && height > 752) || (number === 6)) ?  text : ""}</p>
           </div>
         </div>
       )}

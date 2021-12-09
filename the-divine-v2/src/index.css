@@ -33,6 +33,26 @@ body {
 
 }
 
+
+
+.phonebody {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  background: rgb(44, 169, 211);
+  background-size: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;;
+  position: relative;
+  height: 100%;
+  max-height :100%;
+  max-width :100%;
+  transition: 0.5s;
+  overflow-y: visible;
+}
+
+
 .altbody {
   margin: 0;
   font-family: 'Spartan', sans-serif;
@@ -72,7 +92,7 @@ body {
   position: relative;
   height: 100vh;
   transition: 0.5s;
-
+  overflow-y: visible;
 }
 
 .skillsbody {

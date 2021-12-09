@@ -11,11 +11,15 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import "./App.css";
 import "./css/landingpage.css";
+import useWindowDimensions from "./components/WindowSize";
 
 function App() {
   let location = useLocation();
+  const { width } = useWindowDimensions();
 
-  if (location.pathname === "/") {
+  if (width <= 575) {
+    document.body.className = "phonebody";
+  } else if (location.pathname === "/") {
     document.body.className = "mainbody";
   } else if (
     location.pathname === "/story"
@@ -53,7 +57,7 @@ function App() {
           ))}
         </div>
       </div>
-      <Footer />
+      {width > 575 && <Footer />}
     </AbsoluteWrapper>
   );
 }
