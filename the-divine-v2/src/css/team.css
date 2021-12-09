@@ -1,0 +1,115 @@
+.teamCards {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  border: solid rgba(255, 255, 255, 0.418) 3px;
+  padding: 35px;
+}
+
+.memberCard {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.container {
+  position: relative;
+  border: solid #ffffff 3px;
+  width: 150px;
+  height: 150px;
+  border-radius: 175px;
+  padding: 5px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #0e90a763;
+  border-radius: 175px;
+  padding: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay i {
+  font-size: 4em;
+  color: white;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.memberCard h1 {
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: rgb(233, 230, 230);
+  font-weight: 1500;
+  border-bottom: none;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.memberCard h4 {
+  font-size: 0.8em;
+  color: rgb(233, 230, 230);
+  line-height: 20px;
+  margin: 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.pText {
+  margin: 5px;
+  font-size: 0.9em;
+  margin-top: 15px;
+  background: rgba(59, 0, 87, 0.185);
+  border-radius: 5px;
+  padding: 10px;
+  height: 260px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.pText p {
+  font-size: 1em;
+  color: rgb(233, 230, 230);
+  line-height: 25px;
+}
+
+.memberCard img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 175px;
+  cursor: pointer;
+}
+
+
+.tinyCards {
+    margin: 30px auto;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tinyCards .memberCard {
+    margin: 25px;
+}
