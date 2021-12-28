@@ -6,6 +6,7 @@ import Story from "./components/Story";
 import Tiers from "./components/Tiers";
 import Roadmap from "./components/Roadmap";
 import Team from "./components/Team";
+import StandUp from "./components/StandUp";
 import AbsoluteWrapper from "./components/AbsoluteWrapper";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -29,7 +30,11 @@ function App() {
     location.pathname === "/tiers"
   ) {
     document.body.className = "altbody";
-  } else {
+  } else if (
+    location.pathname === "/standup"
+  ) 
+  document.body.className = "firebody";
+  else {
     document.body.className = "roadmapbody";
   }
 
@@ -52,6 +57,7 @@ function App() {
                 <Route exact path="/tiers" element={<Tiers />} />
                 <Route exact path="/roadmap" element={<Roadmap />} />
                 <Route exact path="/team" element={<Team />} />
+                <Route exact path="/standup" element={<StandUp />} />
               </Routes>
             </animated.div>
           ))}

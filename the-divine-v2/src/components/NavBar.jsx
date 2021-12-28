@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import useWindowDimensions from "./WindowSize";
+import su2c from '../img/su2c-logo.png'
 
 function NavBar() {
   let location = useLocation();
@@ -44,6 +45,9 @@ function NavBar() {
         </NavLink>
         <NavLink className={asp} activeClassName="selected" to="/team">
         Team
+        </NavLink>
+        <NavLink className={asp} activeClassName="selected" to="/standup">
+          <img alt="hello" src={su2c} width='100px' />
         </NavLink>
       </div>
     </nav>

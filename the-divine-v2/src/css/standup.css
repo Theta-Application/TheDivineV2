@@ -1,0 +1,162 @@
+.roadmapPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.osAndSuLinks {
+  display: flex;
+  margin: 0 25px;
+  align-items: center;
+}
+
+.osAndSuLinks img {
+  opacity: 0.6;
+  margin: 0 25px;
+  transition: 0.5s;
+}
+
+.osAndSuLinks img:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+
+#drakes {
+  color: rgba(255, 255, 255, 0.767);
+  font-size: 1.5em;
+  margin: 25px;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+
+.allBlocks {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.community {
+  margin: 15px;
+  border: solid white 3px;
+  padding: 20px;
+  width: 100%;
+  height: 40vh;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.192);
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.comList {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 199, 14); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(236, 224, 110); 
+}
+
+/* .selList {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.prepList {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.eradList {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.allBlocks h6 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  line-height: 30px;
+}
+
+.sellout {
+  margin: 15px;
+  border: solid white 3px;
+  padding: 20px;
+}
+
+.preparation {
+  margin: 15px;
+  border: solid white 3px;
+  padding: 20px;
+}
+
+.erad {
+  margin: 15px;
+  border: solid white 3px;
+  padding: 20px;
+}
+*/
+
+.roadmapPage h3 {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 3px;
+  border-bottom: solid white 2px;
+}
+
+.allBlocks h4 {
+  color: rgba(255, 217, 0, 0.925);
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.allBlocks h5 {
+  color: rgba(104, 210, 236, 0.952);
+  font-size: 0.9em;
+  letter-spacing: 2px;
+margin: 0;
+margin-top: 24px;
+}
+
+
+.allBlocks h6 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  line-height: 30px;
+}
+
+.allBlocks p {
+  letter-spacing: 1px;
+  line-height: 25px;
+}

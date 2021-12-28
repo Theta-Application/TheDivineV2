@@ -80,6 +80,27 @@ body {
 
 }
 
+.firebody {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  background: linear-gradient(
+      0deg,
+      rgba(10, 101, 187, 0.726),
+      rgba(192, 128, 10, 0.699)
+    ),
+    url("./img/NODIVINEBG.png");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  transition: 0.5s;
+
+}
+
 .roadmapbody {
   margin: 0;
   font-family: 'Spartan', sans-serif;
@@ -165,6 +186,7 @@ code {
   width: 60%;
   justify-content: space-evenly;
   transition: 1s;
+  align-items: center;
 }
 
 .links .selected {
