@@ -128,7 +128,7 @@ function Home() {
         </div>
         <div className="supply">
           <h2>
-            <span style={{ color: "gold " }}>{supply}</span>/4444 warriors are
+            <span style={{ color: "gold " }}>{supply <= 4444 ? supply : "4444"}</span>/4444 warriors are
             ready.
           </h2>
         </div>
