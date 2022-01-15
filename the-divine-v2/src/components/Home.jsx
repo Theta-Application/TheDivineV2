@@ -117,7 +117,7 @@ function Home() {
         </p>
         <div className="allMintingInfo">
           <div className="mintBox">
-            <button onClick={onMintPressed} className="shine-box">MINT</button>
+            <button disabled={supply > 4444 ? true : false} onClick={onMintPressed} className="shine-box">MINT</button>
           </div>
           <div className="totalAndConnect">
             <button onClick={connectWalletPressed}>CONNECT</button>

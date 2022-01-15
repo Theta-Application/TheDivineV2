@@ -42,14 +42,14 @@ function StandUp() {
                       >
                         Stand Up To Cancer
                       </a>
-                      ! The Divine will be launching an auction of 10 pieces of
+                      ! The Divine launched an auction of 10 pieces of
                       artwork by our very own FINTIST all to benefit Stand Up To
-                      Cancer. Stand Up To Cancer is collaborating with Medically
+                      Cancer. Stand Up To Cancer collaborated with Medically
                       Home on their float, "The Spirit of Perseverance" in the
                       2022 national Rose Parade. The inspirational float is of a
                       knight slaying a dragon, representing the spirit of
                       perseverance against obstacles like cancer. These
-                      auctioned pieces will represent the significance of the
+                      auctioned pieces represent the significance of the
                       Rose Parade float as well as expand on the lore of The
                       Divine
                     </p>
@@ -59,7 +59,7 @@ function StandUp() {
                         “Dragons of The Valkyrie”
                       </span>{" "}
                       are 10 elemental dragons to match their Divine Valkyrie
-                      counterparts. They will be auctioned off with 100% of the
+                      counterparts. They were auctioned off with 100% of the
                       initial sale proceeds going to Stand Up To Cancer. After
                       many meetings and discussions, the introduction of these
                       Divine dragons felt like an authentic extension to the
@@ -67,8 +67,8 @@ function StandUp() {
                       perseverance in the face of cancer
                     </p>
                     <p>
-                      The team and I are so very thankful that we are
-                      collaborating with such an amazing cause and one so close
+                      The team and I are so very thankful that we
+                      collaborated with such an amazing cause and one so close
                       to our hearts. We are humbled to launch the first ever NFT
                       fundraising campaign to benefit SU2C and look forward to
                       many more potential collaborations in the long term. Many
@@ -101,27 +101,10 @@ function StandUp() {
                       project can also drive a lot of new people into the NFT
                       space AND into The Divine!
                     </p>
-                    <h5>When and how long is the auction?</h5>
+                    <h5>When was the auction?</h5>
                     <p>
-                      We expect the auctions to run 10 days starting on January
-                      3rd.
-                    </p>
-                    <h5>I want a dragon!</h5>
-                    <p>
-                      You can get one! By placing a bid; you are making a
-                      massive contribution to a very important cause.
-                    </p>
-                    <h5>When are we getting to the actual roadmap?</h5>
-                    <p>
-                      We know, we WANT to get to the roadmap, but the project
-                      needs to sell out. The team is doing everything we can to
-                      make this happen. We have SO much we want to show you in
-                      terms of the roadmap and the future and we are so thankful
-                      for your continued and unwavering support. This cause is
-                      personally important to The Divine team and we’re
-                      extremely excited to have the opportunity to make a
-                      difference with this collection. We’re so very proud of
-                      this step and we hope you are too.
+                      The auctions ran 10 days starting on January
+                      3rd, 2022.
                     </p>
                   </div>
                 </div>
