@@ -110,7 +110,7 @@ function Home() {
         </div>
         <h2>Fight for the Heavens.</h2>
         <p>
-          4,444 hand-drawn, cosmic, angelic warriors that protect and nurture
+          4,477 hand-drawn, cosmic, angelic warriors that protect and nurture
           all that is good in the observable universe of their realm.
         </p>
         <div className="allMintingInfo">
