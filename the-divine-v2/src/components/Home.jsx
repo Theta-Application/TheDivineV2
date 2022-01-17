@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import os from "../img/os.png";
 import {
-  connectWallet,
   getCurrentWalletConnected,
-  mintNFT,
   presaleMints,
   totalSupply,
 } from "../utils/interact";
@@ -14,12 +12,12 @@ function Home() {
   const [walletAddress, setWallet] = useState("");
   const [, setStatus] = useState("");
 
-  const [supply, setSupply] = useState(0);
+  const [, setSupply] = useState(0);
 
   const [, setPresaleTotalMints] = useState(0);
 
-  // Mint amount
-  const [mintAmount, setMintAmount] = useState(1);
+  // // Mint amount
+  // const [mintAmount, setMintAmount] = useState(1);
 
   document.body.classList.remove("newpage");
 
@@ -73,23 +71,23 @@ function Home() {
     }
   }, [walletAddress]);
 
-  const updateMintAmount = () => {
-    if (mintAmount !== 12) {
-      setMintAmount(mintAmount + 1);
-    } else {
-      setMintAmount(1);
-    }
-  };
+  // const updateMintAmount = () => {
+  //   if (mintAmount !== 12) {
+  //     setMintAmount(mintAmount + 1);
+  //   } else {
+  //     setMintAmount(1);
+  //   }
+  // };
 
-  const connectWalletPressed = async () => {
-    const walletResponse = await connectWallet();
-    setStatus(walletResponse.status);
-    setWallet(walletResponse.address);
-  };
+  // const connectWalletPressed = async () => {
+  //   const walletResponse = await connectWallet();
+  //   setStatus(walletResponse.status);
+  //   setWallet(walletResponse.address);
+  // };
 
-  const onMintPressed = async () => {
-    mintNFT(mintAmount, walletAddress);
-  };
+  // const onMintPressed = async () => {
+  //   mintNFT(mintAmount, walletAddress);
+  // };
 
   return (
     <AbsoluteWrapper id="home">
@@ -117,18 +115,18 @@ function Home() {
         </p>
         <div className="allMintingInfo">
           <div className="mintBox">
-            <button disabled={supply > 4444 ? true : false} onClick={onMintPressed} className="shine-box">MINT</button>
+            <button disabled className="shine-box">SOLD OUT</button>
           </div>
-          <div className="totalAndConnect">
+          {/* <div className="totalAndConnect">
             <button onClick={connectWalletPressed}>CONNECT</button>
             <button onClick={updateMintAmount}>
               {mintAmount} DIVINE{mintAmount === 1 ? "" : "S"}
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="supply">
           <h2>
-            <span style={{ color: "gold " }}>{supply <= 4444 ? supply : "4444"}</span>/4444 warriors are
+            <span style={{ color: "gold " }}>4477</span>/4477 warriors are
             ready.
           </h2>
         </div>
