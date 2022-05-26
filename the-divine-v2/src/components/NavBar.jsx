@@ -32,10 +32,10 @@ function NavBar() {
         THE DIVINE
       </h1>
       <div className="links">
-        <NavLink className={asp} activeClassName="selected" exact to="/">
-          Home
+      <NavLink className={wep} activeClassName="selected" exact to="/main">
+          The Divine
         </NavLink>
-        <NavLink className={wep} activeClassName="selected" exact to="/weapons">
+        <NavLink className={asp} activeClassName="selected" exact to="/">
           Weapons
         </NavLink>
         <NavLink className={asp} activeClassName="selected" to="/story">

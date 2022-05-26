@@ -101,11 +101,14 @@ function Weapons() {
         <h2>Soul Bound Weapons</h2>
         <p>
           The Soul Bound weapons are a free mint for every Divine holder. You can mint one 
-          weapon per Divine in the wallet you are minting from.
+          weapon per Divine in the wallet you are minting from. The Divine needed to be in the wallet
+          on Wednesday 5/25, at 9pm EST to be eligible.
+
+          Mint opens at 8pm EST on Thursday 5/26.
         </p>
         <div className="allMintingInfo">
           <div className="mintBox">
-            <button disabled onClick={onMintPressed} style={{ backgroundColor: "#bbd6e5", color: "#2599fe" }} className="shine-box">TO ARMS</button>
+            <button onClick={onMintPressed} style={{ backgroundColor: "#bbd6e5", color: "#2599fe" }} className="shine-box">TO ARMS</button>
           </div>
           <div className="totalAndConnect">
             <button onClick={connectWalletPressed}>CONNECT</button>

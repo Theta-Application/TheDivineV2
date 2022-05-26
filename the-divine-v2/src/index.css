@@ -214,7 +214,11 @@ code {
 
 .as {
   color: white;
+  background-color: rgba(0, 0, 0, 0.164);
+  padding: 15px 15px;
+  border-radius: 15px;
   text-decoration: none;
+  margin: 5px;
   font-size: 1.3vw;
   transition: 0.5s;
 }

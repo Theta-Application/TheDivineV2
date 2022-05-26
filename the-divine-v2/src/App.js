@@ -21,14 +21,14 @@ function App() {
 
   if (width <= 575) {
     document.body.className = "phonebody";
-  } else if (location.pathname === "/") {
+  } else if (location.pathname === "/main") {
     document.body.className = "mainbody";
   } else if (
     location.pathname === "/story"
   ) {
     document.body.className = "skillsbody";
   } else if (
-    location.pathname === "/weapons"
+    location.pathname === "/"
   ) {
     document.body.className = "wepbody";
   } else if (
@@ -57,8 +57,8 @@ function App() {
           {transitions.map(({ item: location, props, key }) => (
             <animated.div key={key} style={props}>
               <Routes location={location}>
-                <Route exact path="/" element={<Home />} />
-                <Route exact path="/weapons" element={<Weapons />} />
+                <Route exact path="/main" element={<Home />} />
+                <Route exact path="/" element={<Weapons />} />
                 <Route exact path="/story" element={<Story />} />
                 <Route exact path="/tiers" element={<Tiers />} />
                 <Route exact path="/roadmap" element={<Roadmap />} />
