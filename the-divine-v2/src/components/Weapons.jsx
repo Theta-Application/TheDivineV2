@@ -61,14 +61,6 @@ function Weapons() {
     fetchData();
   }, []);
 
-  const updateMintAmount = () => {
-    if (mintAmount !== 20) {
-      setMintAmount(mintAmount + 1);
-    } else {
-      setMintAmount(1);
-    }
-  };
-
   const connectWalletPressed = async () => {
     const walletResponse = await connectWallet();
     setStatus(walletResponse.status);
@@ -78,6 +70,11 @@ function Weapons() {
   const onMintPressed = async () => {
     mintNFT(mintAmount, walletAddress);
   };
+
+  const onMintNumberChange = (event) => {
+    setMintAmount(event.target.value)
+    console.log("MINT AMOUNT", event.target.value)
+  }
 
   return (
     <AbsoluteWrapper id="home">
@@ -112,9 +109,28 @@ function Weapons() {
           </div>
           <div className="totalAndConnect">
             <button onClick={connectWalletPressed}>CONNECT</button>
-            <button onClick={updateMintAmount}>
-              {mintAmount} WEAPON{mintAmount === 1 ? "" : "S"}
-            </button>
+            <select onChange={onMintNumberChange}>
+                <option value="1">1 Weapon</option>
+                <option value="2">2 Weapons</option>
+                <option value="3">3 Weapons</option>
+                <option value="4">4 Weapons</option>
+                <option value="5">5 Weapons</option>
+                <option value="6">6 Weapons</option>
+                <option value="7">7 Weapons</option>
+                <option value="8">8 Weapons</option>
+                <option value="9">9 Weapons</option>
+                <option value="10">10 Weapons</option>
+                <option value="11">11 Weapons</option>
+                <option value="12">12 Weapons</option>
+                <option value="13">13 Weapons</option>
+                <option value="14">14 Weapons</option>
+                <option value="15">15 Weapons</option>
+                <option value="16">16 Weapons</option>
+                <option value="17">17 Weapons</option>
+                <option value="18">18 Weapons</option>
+                <option value="19">19 Weapons</option>
+                <option value="20">20 Weapons</option>
+            </select>
           </div>
         </div>
         <div className="supply">
