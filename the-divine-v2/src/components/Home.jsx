@@ -3,18 +3,15 @@ import AbsoluteWrapper from "./AbsoluteWrapper";
 import os from "../img/os.png";
 import {
   getCurrentWalletConnected,
-  presaleMints,
   totalSupply,
 } from "../utils/interact";
 
 function Home() {
   // Minter information
-  const [walletAddress, setWallet] = useState("");
+  const [, setWallet] = useState("");
   const [, setStatus] = useState("");
 
   const [, setSupply] = useState(0);
-
-  const [, setPresaleTotalMints] = useState(0);
 
   // // Mint amount
   // const [mintAmount, setMintAmount] = useState(1);
@@ -62,14 +59,6 @@ function Home() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    const setMintMessage = async () => {
-      setPresaleTotalMints(await presaleMints(walletAddress));
-    };
-    if (walletAddress) {
-      setMintMessage();
-    }
-  }, [walletAddress]);
 
   // const updateMintAmount = () => {
   //   if (mintAmount !== 12) {

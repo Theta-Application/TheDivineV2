@@ -122,6 +122,24 @@ body {
   overflow-y: visible;
 }
 
+.wepbody {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  background:
+    url("./img/SBWEP.png");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  transition: 0.5s;
+  overflow-y: visible;
+}
+
+
 .skillsbody {
   margin: 0;
   font-family: 'Spartan', sans-serif;
@@ -201,7 +219,18 @@ code {
   transition: 0.5s;
 }
 
+.asWeapon {
+  color: rgb(255, 221, 28);
+  text-decoration: none;
+  font-size: 1.3vw;
+  transition: 0.5s;
+}
+
 .as:hover {
+  color: rgba(85, 228, 253, 0.774);
+}
+
+.asWeapon:hover {
   color: rgba(85, 228, 253, 0.774);
 }
 
@@ -220,6 +249,10 @@ code {
 
 @media (max-width: 1200px) {
   .as {
+    font-size: 1.1em;
+  }
+
+  .asWeapon {
     font-size: 1.1em;
   }
 
@@ -256,6 +289,11 @@ code {
   }
 
   .as {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+
+  .asWeapon {
     font-size: 1.4em;
     margin-bottom: 20px;
   }

@@ -11,6 +11,7 @@ function NavBar() {
 
   let navbar = "navbar";
   let asp = "as";
+  let wep = "asWeapon"
 
   if (location.pathname === "/") {
     navbar = "navbar";
@@ -33,6 +34,9 @@ function NavBar() {
       <div className="links">
         <NavLink className={asp} activeClassName="selected" exact to="/">
           Home
+        </NavLink>
+        <NavLink className={wep} activeClassName="selected" exact to="/weapons">
+          Weapons
         </NavLink>
         <NavLink className={asp} activeClassName="selected" to="/story">
         Story

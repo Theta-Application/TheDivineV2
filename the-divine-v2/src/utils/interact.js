@@ -4,11 +4,11 @@ require("dotenv").config();
 
 const Web3 = require("web3");
 const ethNetwork =
-  "https://mainnet.infura.io/v3/f614a724e563453f9105be481807abb3";
+  "https://mainnet.infura.io/v3/cc38006cf6de4b989870ea7c1983e9e6";
 const web3 = new Web3(new Web3.providers.HttpProvider(ethNetwork));
 
 const contractABI = require("./contract-abi.json");
-const contractAddress = "0xA3C2E31ad437742173706578748A223DdA95F019"
+const contractAddress = "0x2A3fe90346a1eC447fF078cfD323F1A477DAa823"
 
 export const connectWallet = async () => {
   if (window.ethereum) {
@@ -109,19 +109,6 @@ export const totalSupply = async () => {
   return totalSupply;
 }
 
-export const presaleMints = async (wallet) => {
-
-  const updatedAddress = web3.utils.toChecksumAddress(
-    contractAddress
-  );
-
-  window.contract = await new web3.eth.Contract(contractABI, updatedAddress);
-
-  const whitelistedTotal = await window.contract.methods.Whitelist(wallet).call();
-
-  return whitelistedTotal;
-};
-
 export const mintNFT = async (mintAmount, address) => {
 
   if (!address) {
@@ -136,21 +123,19 @@ export const mintNFT = async (mintAmount, address) => {
 
   console.log("window contract", window.contract);
 
-  console.log("mint amount", mintAmount, web3.utils.toWei("0.08"));
+  console.log("mint amount", mintAmount, web3.utils.toWei("0"));
 
-  const value = String(mintAmount * web3.utils.toWei("0.08"));
+  // const value = String(mintAmount * web3.utils.toWei("0"));
 
-  console.log("value", value, typeof value);
+  // console.log("value", value, typeof value);
 
   //set up your Ethereum transaction
   const transactionParameters = {
     to: updatedAddress, // Required except during contract publications.
     from: window.ethereum.selectedAddress, // must match user's active address.
-    value: parseInt(web3.utils.toWei("0.08", "ether") * mintAmount).toString(
-      16
-    ),
+    value: 0,
     data: window.contract.methods
-      .mint(mintAmount)
+      .mintReserved(address, mintAmount)
       .encodeABI(), //make call to NFT smart contract
   };
 

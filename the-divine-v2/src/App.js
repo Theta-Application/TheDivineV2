@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Story from "./components/Story";
 import Tiers from "./components/Tiers";
 import Roadmap from "./components/Roadmap";
+import Weapons from "./components/Weapons";
 import Team from "./components/Team";
 import StandUp from "./components/StandUp";
 import AbsoluteWrapper from "./components/AbsoluteWrapper";
@@ -26,6 +27,10 @@ function App() {
     location.pathname === "/story"
   ) {
     document.body.className = "skillsbody";
+  } else if (
+    location.pathname === "/weapons"
+  ) {
+    document.body.className = "wepbody";
   } else if (
     location.pathname === "/tiers"
   ) {
@@ -53,6 +58,7 @@ function App() {
             <animated.div key={key} style={props}>
               <Routes location={location}>
                 <Route exact path="/" element={<Home />} />
+                <Route exact path="/weapons" element={<Weapons />} />
                 <Route exact path="/story" element={<Story />} />
                 <Route exact path="/tiers" element={<Tiers />} />
                 <Route exact path="/roadmap" element={<Roadmap />} />
